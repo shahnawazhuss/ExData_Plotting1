@@ -23,7 +23,7 @@ if(!file.exists(destfile)){
 }
 ############################################################
 #Section to Read Data and Subset Data reqired
-power<-read.table(destfile,header = TRUE,sep=";")
+power<-read.table(destfile,header = TRUE,sep=";",na.strings = "?")
 powerbydates<-subset(power, power$Date=="1/2/2007"|power$Date=="2/2/2007")
 
 ############################################################
