@@ -49,7 +49,6 @@ lines(powerbydates$absoluteTime,powerbydates$Sub_metering_1)
 lines(powerbydates$absoluteTime,powerbydates$Sub_metering_2,col="red")
 lines(powerbydates$absoluteTime,powerbydates$Sub_metering_3,col="blue")
 legend("topright", lty=1, col=c("black","red","blue"),legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),cex = 0.3)
-title(main="Energy sub-metering")
 #Subplot4
 with(powerbydates,plot(powerbydates$absoluteTime,powerbydates$Global_reactive_power,type="l",xlab = "datetime",ylab = "Global_reactive_power"))
 dev.copy(png,"./Data/Plots/Plot4.png",height=480,width=480)
